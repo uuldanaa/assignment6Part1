@@ -1,0 +1,15 @@
+<h2>Parent1 Component</h2>
+
+  <button type="button" (click)="getValues()">
+    Get Values
+  </button>
+
+  <div *ngFor="let SharedValue of SharedValueList">
+    <p>
+      Name: {{SharedValue.name}},
+      Language: {{SharedValue.language}},
+      Age: {{SharedValue.age}}
+    </p>
+  </div>
+<app-child1></app-child1>
+<app-child2></app-child2>
